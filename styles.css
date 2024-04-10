@@ -9,16 +9,40 @@ body {
   height: 100%;
 }
 
-.home-body {
-  background: url("./my_recipe_book/images/background-01-port.png") no-repeat
+.home-meals {
+  background: url("./my_recipe_book/images/background-02-port.png") no-repeat
     center;
   background-attachment: fixed;
   background-size: cover;
 }
 
+/* Header */
+
+.header {
+  background-color: #2196f3;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  position: fixed;
+  overflow: hidden;
+  text-align: center;
+}
+
+.header i {
+  float: left;
+  padding: 17px 0 0 17px;
+  color: #fff;
+}
+
+.header img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+}
+
 /* Home page */
 
-/* menu */
+/* Menu */
 
 .home-menu-item {
   text-decoration: none;
@@ -45,4 +69,47 @@ body {
 
 .home-logo-text {
   width: auto;
+}
+
+/* Meals page */
+
+.meals-container {
+  padding-top: 50px;
+}
+
+.home-body {
+  background: url("./my_recipe_book/images/background-01-port.png") no-repeat
+    center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.meals-list a {
+  text-decoration: none;
+}
+
+.meals-list-item {
+  border: 5px solid #1a1a1a;
+  margin: 10px;
+}
+
+.meals-list-item h1 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #1a1a1a;
+  padding-left: 10px;
+}
+
+.meals-list-item i {
+  float: right;
+  color: #1a1a1a;
+  padding-right: 15px;
+}
+
+.meals-list-item p {
+  font-size: 15px;
+  font-style: italic;
+  color: #4d4d4d;
+  margin-top: -7px;
+  padding-left: 10px;
 }
