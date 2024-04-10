@@ -18,7 +18,7 @@ body {
 
 /* Home page */
 
-/* Home page === menu */
+/* menu */
 
 .home-menu-item {
   text-decoration: none;
@@ -31,4 +31,18 @@ body {
   display: block;
   margin: auto auto 10px auto;
   width: 80%;
+}
+
+/* images */
+
+.home-logo-img,
+.home-logo-text {
+  width: 50px;
+  display: block;
+  margin: auto;
+  padding: 25px 10px 10px 10px;
+}
+
+.home-logo-text {
+  width: auto;
 }
