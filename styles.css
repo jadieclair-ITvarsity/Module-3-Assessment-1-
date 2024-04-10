@@ -1,0 +1,27 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+/* Home page */
+
+/* Home page === menu */
+
+.home-menu-item {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  border: 5px solid #000;
+  display: block;
+  margin: auto auto 10px auto;
+  width: 80%;
+}
