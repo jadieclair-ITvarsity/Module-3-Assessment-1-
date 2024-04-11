@@ -19,25 +19,30 @@ body {
 /* Header */
 
 .header {
-  background-color: #2196f3;
+  background-color: #222121;
   width: 100%;
-  height: 50px;
+  height: 60px;
   top: 0;
   position: fixed;
   overflow: hidden;
   text-align: center;
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
 
 .header i {
   float: left;
-  padding: 17px 0 0 17px;
+  padding: 22px 0 0 17px;
   color: #fff;
+  transition: 0.2s ease;
+}
+
+.header i:hover {
+  transform: scale(1.3);
 }
 
 .header img {
-  /* display: block;
-  margin: 0 auto; */
-  padding-top: 10px;
+  padding: 16px 40px 0 0;
   width: 200px;
 }
 
@@ -55,7 +60,14 @@ body {
   border: 5px solid #fff;
   display: block;
   margin: auto auto 10px auto;
-  width: 80%;
+  width: 25%;
+  border-radius: 20px;
+  transition: width 0.2s ease;
+}
+
+.home-menu-item:hover {
+  width: 20%;
+  backdrop-filter: blur(8px);
 }
 
 /* images */
@@ -75,7 +87,7 @@ body {
 /* Meals page */
 
 .meals-container {
-  padding-top: 50px;
+  padding-top: 90px;
 }
 
 .home-body {
@@ -91,7 +103,12 @@ body {
 
 .meals-list-item {
   border: 5px solid #1a1a1a;
-  margin: 10px;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.meals-list-item:hover {
+  backdrop-filter: blur(8px);
 }
 
 .meals-list-item h1 {
@@ -104,7 +121,14 @@ body {
 .meals-list-item i {
   float: right;
   color: #1a1a1a;
-  padding-right: 15px;
+  padding: 15px;
+  font-size: 25px;
+  transition: 0.3 ease;
+}
+
+.meals-list-item i:hover {
+  transform: scale(1.3);
+  color: rgb(4, 71, 4);
 }
 
 .meals-list-item p {
@@ -121,24 +145,26 @@ body {
 
 .recipe-container {
   padding-top: 50px;
+  background-color: #e4e4e2;
 }
 
 .recipe-details img {
   width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
 }
 
 .recipe-details h1 {
   font-size: 25px;
   text-align: center;
-  border: 5px solid #1a1a1a;
-  margin: 10px;
+  margin-top: 40px;
   padding: 5px;
 }
 
 .recipe-details h2 {
   font-size: 20px;
   text-align: left;
-  margin: 0 0 0 10px;
+  margin: 5px 0 15px 10px;
 }
 
 .recipe-details-info {
@@ -165,4 +191,59 @@ body {
 
 .recipe-details-steps ol {
   padding-left: 28px;
+}
+
+.recipe-details-steps li {
+  line-height: 23px;
+  margin-right: 15px;
+}
+
+.end {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+/* Responsive layout */
+
+@media only screen and (min-width: 600px) {
+  .home-meals,
+  .recipies-body,
+  .header {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .home-meals,
+  .recipies-body,
+  .header {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .home-meals,
+  .recipies-body,
+  .header {
+    width: 40%;
+    margin: auto;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .home-body {
+    background: url("./my_recipe_book/images/background-01-land.png") no-repeat
+      center;
+    background-size: cover;
+  }
+
+  .home-meals {
+    background: url("./my_recipe_book/images/background-02-land.png") no-repeat
+      center;
+    background-size: cover;
+  }
 }
